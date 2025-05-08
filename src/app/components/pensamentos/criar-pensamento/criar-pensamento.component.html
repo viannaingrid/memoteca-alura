@@ -5,8 +5,17 @@
   <form [formGroup]="formulario">
     <label for="pensamento">Pensamento</label>
     <input type="textarea" class="input" id="pensamento" formControlName="conteudo" placeholder="Digite seu pensamento" >
+    <div class="mensagem__erro" *ngIf="formulario.get('conteudo')?.errors && formulario.get('conteudo')?.touched">
+      Pensamento é obrigátório!
+    </div>
     <label for="autoria">Autoria ou Fonte</label>
     <input type="text" class="input" id="autoria" formControlName="autoria" placeholder="Digite a autoria ou fonte" >
+    <div class="mensagem__erro" *ngIf="formulario.get('autoria')?.errors?.['required']&& formulario.get('autoria')?.touched">
+      Autoria é obrigátório!
+    </div>
+    <div class="mensagem__erro" *ngIf="formulario.get('autoria')?.errors?.['minlength']">
+      Autoria precisa ter no mínimo 3 caracteres!
+    </div>
     <label for="modelo">Selecione o modelo do card:</label>
     <section class="container-radio">
       <div class="radio-modelo">
