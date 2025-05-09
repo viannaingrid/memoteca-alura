@@ -21,7 +21,8 @@ export class PensamentoService {
     .set("_page", pagina)
     .set("_limit", itensPorPagina)
 
-    // return this.http
+
+    // retorno antigo return this.http
     //   .get<Pensamento[]>(`${this.API}?_page=${pagina}&_limit=${itensPorPagina}`)
 
     return this.http.get<Pensamento[]>(this.API, {params})
