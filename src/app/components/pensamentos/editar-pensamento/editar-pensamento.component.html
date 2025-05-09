@@ -11,8 +11,11 @@
     </div>
     <label for="autoria">Autoria ou Fonte</label>
     <input type="text" class="input" id="autoria" formControlName="autoria" placeholder="Digite a autoria ou fonte" >
-    <div class="mensagem__erro" *ngIf="formulario.get('autoria')?.errors?.['minLength']">
+    <div class="mensagem__erro"  *ngIf="formulario.get('autoria')?.errors?.['required'] && formulario.get('autoria')?.touched">
       Autoria é obrigatório!
+    </div>
+    <div class="mensagem__erro" *ngIf="formulario.get('autoria')?.errors?.['minLength']">
+      Autoria precisa ter no mínimo 3 caracteres!
     </div>
     <label for="modelo">Selecione o modelo do card:</label>
     <section class="container-radio">
