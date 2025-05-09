@@ -14,7 +14,7 @@ export class PensamentoService {
 
   listar(pagina: number): Observable<Pensamento[]>{
 
-    const itensPorPagina = 6
+    const itensPorPagina: number = 6
     // GET /posts?_page=7&_limit=20
 
     let params = new HttpParams()
