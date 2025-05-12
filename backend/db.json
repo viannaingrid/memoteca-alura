@@ -19,21 +19,21 @@
       "autoria": "Dev Front-End",
       "modelo": "modelo2",
       "id": 24,
-      "favorito": true
+      "favorito": false
     },
     {
       "conteudo": "Amo estudar Angular",
       "autoria": "Dev",
       "modelo": "modelo1",
       "id": 25,
-      "favorito": false
+      "favorito": true
     },
     {
       "conteudo": "Ir estudar inglês agora a noite",
       "autoria": "Dev",
       "modelo": "modelo2",
       "id": 26,
-      "favorito": false
+      "favorito": true
     },
     {
       "conteudo": "Preciso estudar espanhol",
