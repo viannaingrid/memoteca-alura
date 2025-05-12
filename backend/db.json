@@ -4,25 +4,29 @@
       "id": 2,
       "conteudo": "Angular é o melhor",
       "autoria": "Dev front",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "conteudo": "Pensamento teste",
       "autoria": "dev front",
       "modelo": "modelo2",
-      "id": 23
+      "id": 23,
+      "favorito": true
     },
     {
       "conteudo": "Angular é 100000",
       "autoria": "Dev Front-End",
       "modelo": "modelo2",
-      "id": 24
+      "id": 24,
+      "favorito": false
     },
     {
       "conteudo": "Amo estudar Angular",
       "autoria": "Dev",
       "modelo": "modelo1",
-      "id": 25
+      "id": 25,
+      "favorito": true
     },
     {
       "conteudo": "Ir estudar inglês agora a noite",
@@ -34,13 +38,15 @@
       "conteudo": "Preciso estudar espanhol",
       "autoria": "Dev",
       "modelo": "modelo3",
-      "id": 27
+      "id": 27,
+      "favorito": false
     },
     {
       "conteudo": "teste",
       "autoria": "test1",
       "modelo": "modelo2",
-      "id": 28
+      "id": 28,
+      "favorito": false
     }
   ]
 }
