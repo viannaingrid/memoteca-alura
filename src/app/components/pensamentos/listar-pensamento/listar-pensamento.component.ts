@@ -16,6 +16,7 @@ export class ListarPensamentoComponent implements OnInit {
   filtro: string = '';
   favoritos: boolean = false;
   listaFavoritos: Pensamento[] = [];
+  titulo: string = 'Meu Mural';
 
 
   // import API with private service and input type PensamentoService
@@ -59,6 +60,7 @@ export class ListarPensamentoComponent implements OnInit {
   }
 
   listarFavoritos(){
+    this.titulo = 'Meus Favoritos'
     this.favoritos = true
     this.haMaisPensamentos = true
     this.paginaAtual = 1
